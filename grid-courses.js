@@ -12,18 +12,19 @@ angular.module('liu-onecampus-grid-courses', [])
         console.log($scope.courses); */
 
         var service = __Courses.getBySchool(1, 2, 46);
-        service.then(function(response){
-            console.log(response.data.Courses);
+        service.then(function(response){            
             $scope.courses = response.data.Courses;
         }, function(response){
             //here put your errors handler
         });
     }])
-    .directive('gridCourses', function() {
-        return {
-            templateUrl: 'grid.html',
+    .directive('gridCourses', [function() {        
+        return {            
+            templateUrl: function(elem, attrs){                
+                return attrs.template;  
+            }
         };
-    })
+    }])
     .service('__Courses', ['$http', function($http){
         var services = {
             getBySchool: function(school_id, language_id, institution_id){
@@ -38,5 +39,5 @@ angular.module('liu-onecampus-grid-courses', [])
             }
         }
         return services;
-    }]);
+}]);
 
