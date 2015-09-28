@@ -39,3 +39,4 @@ angular.module('liu-onecampus-grid-courses', [])
         }
         return services;
     }]);
+
