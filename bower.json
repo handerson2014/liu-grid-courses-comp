@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "grid-courses.js",
   "dependencies": {
-    "angular": "~1.3.0"
+    "angular": "~1.4.6"
   },
   "homepage": "https://github.com/handerson2014/liu-grid-courses-comp",
   "authors": [
