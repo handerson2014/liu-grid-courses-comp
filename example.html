@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dragon Drop for AngularJS</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/2.3.1/spruce/bootstrap.min.css">
+  <style>
+    [btf-dragon] {
+      padding: 20px;
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body ng-app="ExampleApp">
+
+  <div class="container" ng-controller="MainCtrl">
+      <grid-courses></grid-courses>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script src="grid-courses.js"></script>
+  <script>
+    angular.module('ExampleApp', ['liu-onecampus-grid-courses']);
+  </script>
+</body>
+</html>
