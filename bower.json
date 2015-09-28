@@ -4,5 +4,17 @@
   "main": "grid-courses.js",
   "dependencies": {
     "angular": "~1.3.0"
-  }
+  },
+  "homepage": "https://github.com/handerson2014/liu-grid-courses-comp",
+  "authors": [
+    "handerson2014 <handerson.contreras@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
