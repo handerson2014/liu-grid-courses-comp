@@ -1,0 +1,8 @@
+{
+  "name": "grid-courses-comp",
+  "version": "0.0.1",
+  "main": "grid-courses.js",
+  "dependencies": {
+    "angular": "~1.3.0"
+  }
+}
